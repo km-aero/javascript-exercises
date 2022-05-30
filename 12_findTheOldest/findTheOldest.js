@@ -10,7 +10,7 @@ const findTheOldest = function(people) {
     difference between DOB and DOD */
     for (let i = 0; i < peopleLength; i++) {
         // if not dead, set year of death to this year
-        if (typeof people[i].yearOfDeath === undefined) {
+        if (typeof people[i].yearOfDeath === "undefined") {
             people[i].yearOfDeath = new Date().getFullYear();
         };
         age.push(people[i].yearOfDeath - people[i].yearOfBirth);
